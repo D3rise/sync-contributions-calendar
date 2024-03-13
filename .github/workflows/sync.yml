@@ -25,7 +25,7 @@ jobs:
     - name: print secret
       run: echo $GITLAB_USERNAME
       env:
-        GITLAB_USERNAME: ${{secrets.GITLAB_USERNAME}}
+        GITLAB_USERNAME: ${{ secrets.GITLAB_USERNAME }}
 
     - name: Install node dependencies
       run: npm i
