@@ -29,6 +29,7 @@ jobs:
       run: npm run start
       env:
         GITLAB_USERNAME: ${{secrets.GITLAB_USERNAME}}
+        GITLAB_URL: ${{secrets.GITLAB_URL}}
         GIT_USERNAME: ${{secrets.GIT_USERNAME}}
         GIT_EMAIL: ${{secrets.GIT_EMAIL}}
         FAKE_COMMITS_REPO_URL: ${{secrets.FAKE_COMMITS_REPO_URL}}
