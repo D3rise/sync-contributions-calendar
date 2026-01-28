@@ -16,7 +16,7 @@ async function main () {
   })
 
   const githubCalendar = await gitHelper.getCommitsByDate()
-  const gitlabCalendar = await getGitlabCalendar(process.env.GITLAB_URL, process.env.GITLAB_USERNAME)
+  const gitlabCalendar = await getGitlabCalendar(process.env.GITLAB_USERNAME)
   const gitlabCommitDays = Object.keys(gitlabCalendar)
 
   let whereChangesMade = false
